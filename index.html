@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--lien de l'installation tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+<!--lien du fichier css-->
+    <link rel="stylesheet" href="style.css" />
+    <title>YEO</title>
+</head>
+<style>
+    #check:checked~ul {
+        left: 0;
+    }
+</style>
+
+<body class="w-full">
+<!--en-tête-->
+<header>
+    <nav class="p-1 bg-[#12327B]  shadow text-white">
+        <div class="md:flex md:items-center md:justify-between">
+            <h1 class="mx-3 underline max-[1024px]:hidden ">
+                + (509) 3821-0124
+            </h1>
+            <p class=" px-3 underline max-[1024px]:text-center">
+                <a href="yempowermentorg.infos@gmail.com">yempowermentorg.infos@gmail.com</a>
+            </p>
+        </div>
+    </nav>
+    <nav id="main-nav" class="bg-white p-6 h-20 flex items-center justify-between
+    px-1 ">
+        <input type="checkbox" id="check" hidden>
+        <!--logo de l'entreprise-->
+            <img src="images/logo.png" class=" md:inline md:mr-4 w-40 mx-3" alt="" />
+        </span>
+
+
+        <ul class=" lg:flex max-[1024px]:leading-[60px]  fixed 
+        lg:relative h-[100%] lg:h-0 w-[40%] max-[500px]:w-[20%] lg:w-fit max-[1024px]:top-0 lg:top-0 left-[-100%] 
+        lg:left-0 transition-all max-[1024px]:text-white font-semibold text-sm text-[#080e1f]
+        duration-300 lg:transition-none text-center bg-[#FF7B2F]">
+        <!--liens des différentes page du site-->
+            <li class="mx-4 hover:text-[#FF7B2F]">
+                <a href="index.html">ACCEUIL</a>
+            </li>
+            <li class="mx-4  hover:text-[#FF7B2F]">
+                <a href="missions.html">MISSIONS ET PROGRAMMES</a>
+            </li>
+            <li class="mx-4  hover:text-[#FF7B2F]">
+                <a href="team.html">À PROPOS</a>
+            </li>
+            <li class="mx-4  hover:text-[#FF7B2F]">
+                <a href="contact.html">CONTACT</a>
+            </li>
+            <li class="mx-4  hover:text-[#FF7B2F]">
+                <a href="">FAIRE UN DON</a>
+            </li>
+            <li class="mx-4  hover:-orange-600">
+                <button class="uppercase bg-[#ff7b2f] text-white w-32 h-7
+                rounded-full max-[1024px]:hidden">
+                    get a quote
+                </button>
+            </li>
+        </ul>
+        <label for="check" class="float-right leading-[80px] mr-10 lg:hidden">
+            <!--menu hamberger responsive design-->
+            <img src="images/menu.png" alt="">
+              </label>
+    </nav>
+
+</header>
+
+    <section class="image">
+        <!--background image-->
+        <div class="image bg-no-repeat bg-center bg-cover w-full h-[650px]
+        max-[640px]:h-[300px] opacity-60 " style="background-image: url(images/background.jpg)  ">
+
+            <h1 class="text-white font-semibold text-7xl text-center pt-52 max-[640px]:text-4xl
+            max-[640px]:pt-14  ">
+                Creating a new <br />generation !
+            </h1>
+            <nav class="flex gap-7 justify-center pt-16">
+                <p>
+                    <!--button pour faire un don-->
+                    <button class="bg-[#FF7B2F] text-white rounded-full py-2 w-32 
+                    font-semibold max-[300px]:w-28">Faire Un Don</button>
+                </p>
+                <p>
+                    <!--button pour appliquer au programme-->
+                    <button class="bg-transparent border border-white text-white rounded-full 
+                        py-2 w-32 font-semibold max-[300px]:w-28">Appliquer</button>
+                </p>
+            </nav>
+        </div>
+    </section>
+    <!--la liste des partenaires-->
+    <section class="h-32 flex items-center justify-between pt-10 max-[640px]:flex-col max-[640px]:pt-5
+    max-[640px]:h-40">
+        <h2 class=" mx-3 text-[#429CCF] font-semibold text-[30px] font-[Roboto] pb-[47px] 
+        max-[640px]:pb-0">
+            Nos partenaires
+        </h2>
+
+        <div class="flex items-center gap-4 justify-between px-6 max-[640px]:px-1 ">
+            <nav>
+                <img src="images/logo1.JPG" alt="" class="w-36 pb-[47px] max-[640px]:mb-20">
+            </nav>
+            <nav>
+                <img src="images/logo2.JPG" alt="" class="w-36 pb-[47px] max-[640px]:mb-20">
+            </nav>
+            <nav>
+                <img src="images/logo3.JPG" alt="" class="w-36 pb-[47px] max-[640px]:mb-20">
+            </nav>
+            <nav>
+                <img src="images/logo4.JPG" alt="" class="w-32 pb-[47px] max-[640px]:mb-20">
+            </nav>
+            <nav>
+                <img src="images/logo5.png" alt="" class="w-32 pb-[47px] max-[640px]:mb-20">
+            </nav>
+            <nav>
+                <img src="images/logo6.JPG" alt="" class="w-36 pb-[47px] max-[640px]:mb-20">
+            </nav>
+        </div>
+    </section>
+    <!--la vidéo de YEO-->
+    <section class=" bg-[#12327B] h-80">
+        <div class="flex justify-center gap-10 max-[300px]:flex-col">
+            <div class="pt-9">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/YzJF65NXeQ0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen class="max-[640px]:w-[250px] max-[300px]:mx-5"></iframe>
+            </div>
+            <p class="w-64 font-semibold text-lg pt-20 text-white">
+                <!--objectif de l'organisation-->
+                Faire de l'éducation à la paix, à la non-violence, à l'égalité et au respect des droits humains un outil
+                pour construire une génération d'acteurs de changement en Haïti.
+            </p>
+        </div>
+    </section>
+
+    <section class="flex justify-center gap-20 max-[640px]:gap-5 max-[300px]:flex-col 
+    max-[300px]:gap-0 ">
+        <div class="mt-8 bg-[#429CCF] w-48 h-72 rounded-2xl max-[300px]:mx-auto ">
+            <div>
+                <img src="images/apply.png" alt="" class="mx-auto mt-5">
+            </div>
+            <div>
+                <p class="text-white font-extrabold text-center text-lg mx-5 mt-4">
+                    <!--lien pour appliquer au programme-->
+                    Appliquez À </br>
+                    Youth Haitian </br>
+                    Exchange Program
+                </p>
+                <p class="text-white text-center font-extrabold mx-5 mt-7">
+                    Deadline: May 20th,
+                    2022
+                </p>
+
+            </div>
+        </div>
+
+        <div class="mt-20 bg-[#429CCF] w-48 h-72 rounded-2xl max-[300px]:mx-auto
+        max-[300px]:mt-5 ">
+            <div>
+                <img src="images/job.png" alt="" class="mx-auto mt-5">
+            </div>
+            <div>
+                <p class="text-white font-extrabold text-center text-lg mt-10 mx-5">
+                    <!--lien mission et programmes-->
+                    Missions </br>& </br>Programmes
+                </p>
+
+
+            </div>
+        </div>
+
+        <div class="mt-8 bg-[#429CCF] w-48 h-72 rounded-2xl max-[300px]:mx-auto ">
+            <div>
+                <img src="images/group.png" alt="" class="mx-auto mt-5">
+            </div>
+            <div>
+                <p class="text-white font-extrabold mt-5 mx-5 text-lg text-center">
+                    
+                    Qui sommes nous?
+                </p>
+                <p class="text-white font-extrabold mt-9 mx-5 text-lg text-center">
+                    <a href="team.html">Meet the team</a>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--description de Youth E O-->
+    <section class="flex justify-center gap-20 pt-12 max-[640px]:gap-10 max-[300px]:flex-col">
+        <div>
+            <p class="w-80 pt-8 font-medium text-xl text-right text-[#429CCF] max-[300px]:w-60
+            max-[300px]:text-center max-[300px]:mx-auto">
+                Youth Empowerment Organisation est
+                une organisation à but non lucratif
+                qui se concentre sur l’autonomisation
+                des jeunes. Haïti étant un pays troublé
+                par différentes crises socio-politiques
+                et économiques abandonne ceux qui représentent
+                <a href="" class="text-[#FF7B2F]">Lire la Suite</a>
+            </p>
+        </div>
+        <div>
+            <img src="images/image.JPG" alt="" class="w-[400px] rounded-2xl max-[640px]:w-[300px] 
+            max-[300px]:mx-auto max-[300px]:w-[250px]">
+        </div>
+    </section>
+
+    <!--les projets-->
+    <section class="bg-[#12327B] h-[500px] mt-8 max-[640px]:h-[1200px]">
+        <h1 class="text-white font-black text-3xl text-center pt-7">
+            Nos Projets!
+        </h1>
+        <div class="flex justify-center gap-24 pt-16 max-[640px]:flex-col max-[640px]:gap-9 
+         ">
+            <div class="bg-[#429CCF] w-60 h-80 rounded-2xl border-solid border-4
+             border-[#429CCF] max-[640px]:mx-auto">
+                <p>
+                    <img src="images/photo1.JPG" alt="" class="w-64 rounded-2xl">
+                </p>
+                <p class="text-white font-bold text-lg text-center mt-8">
+                    Youth Haitian
+                    Empowerment
+                    Exchange Program
+                </p>
+            </div>
+
+            <div class="bg-[#429CCF] w-60 h-80 rounded-2xl border-solid border-4
+            max-[640px]:mx-auto border-[#429CCF]">
+                <p>
+                    <img src="images/photo2.JPG" alt="" class="w-64 rounded-2xl">
+                </p>
+                <p class="text-white font-bold text-lg text-center mt-8">
+                    De quel *Droit*</br>
+                    Je me chauffe?
+                </p>
+            </div>
+
+            <div class="bg-[#429CCF] w-60 h-80 rounded-2xl border-solid border-4
+             border-[#429CCF] max-[640px]:mx-auto">
+                <p>
+                    <img src="images/photo3.JPG" alt="" class="w-64 rounded-2xl">
+                </p>
+                <p class="text-white font-bold text-lg text-center mt-5">
+                    Programme
+                    de Renforcement de
+                    Capacités des
+                    Organisations Civiles
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--pied de page-->
+    <footer class="bg-[#429CCF]">
+        <section>
+            <div class="flex items-center justify-around pt-7 ">
+                <h1 class="font-semibold text-white text-2xl max-[640px]:hidden">
+                    Abonnez-Vous
+                </h1>
+                <h1 class="font-semibold text-white text-2xl ">
+                    Restons Connecter
+                </h1>
+            </div>
+            <div class="flex items-center justify-around pt-4 max-[640px]:flex-col 
+            max-[640px]:gap-6 ">
+                <form class="flex flex-row flex-wrap max-[300px]:mx-auto 
+                max-[300px]:flex-col max-[300px]:gap-5">
+                    <input type="text" class="placeholder-[#12327B] w-52 p-2 text-xl" name="" placeholder="Email">
+                    <button class="p-2 w-32 bg-[#12327B] text-xl text-white 
+                    max-[300px]:mx-auto">
+                        Abonnez
+                    </button>
+                </form>
+                <nav>
+                    <ul class="flex pr-24 max-[640px]:pr-5 ">
+                        <li>
+                            <img src="images/icon1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/icon2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/icon3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/icon4.png" alt="">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section class="flex justify-center gap-20 max-[640px]:flex-col 
+                max-[640px]:gap-0 max-[640px]:mx-10 max-[300px]:mx-auto ">
+                <div class="pt-5 max-[640px]:mx-10">
+                    <p>
+                        <img src="images/logo.png" alt="" class=" w-44">
+                    </p>
+                    <p class="w-72 text-white max-[300px]:w-64 ">
+                        Youth Empowerment Organisation
+                        est une organisation à but
+                        non lucratif qui se concentre
+                        sur l’autonomisation des jeunes.
+                    </p>
+                </div>
+                <div class="pt-11 max-[640px]:mx-10 max-[300px]:mx-auto">
+                    <h1 class="text-white font-semibold text-xl ">
+                        Contact Info
+                    </h1>
+                    <p class="text-white pt-3">
+                        Gragramora #1, HT-711 Jéremie,</br>
+                        Grand'Anse, Haiti
+                    </p>
+                    <p class="text-[#12327B]">
+                        + 49 177 77 25053 / (509) 3821-0124
+                    </p>
+                </div>
+                <div class="text-white pt-11 max-[640px]:hidden">
+                    <h1 class="font-semibold text-xl">
+                        À Propos
+                    </h1>
+                    <p class="pt-3 ">
+                    <ul>
+                        <li class="hover:text-[#ff7b2f]"><a href="">Notre blog</a></li>
+                        <li class="hover:text-[#ff7b2f]"><a href="">Galerie</a></li>
+                        <li class="hover:text-[#ff7b2f]"><a href="">À propos</a></li>
+                        <li class="hover:text-[#ff7b2f]"><a href="">Notre mission</a></li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="text-white pt-11 max-[640px]:hidden">
+                    <h1 class="font-semibold text-xl">Lien facile</h1>
+                    <p class="pt-3">
+                    <ul class="hover:">
+                        <li class="hover:text-[#ff7b2f]"><a href="">Nos vidéos</a></li>
+                        <li class="hover:text-[#ff7b2f]"><a href="">Nos programmes</a></li>
+                        <li class="hover:text-[#ff7b2f]"><a href="">Contacter-nous</a></li>
+                        <li class="hover:text-[#ff7b2f]"><a href="">Appliquer</a></li>
+                        <li class="hover:text-[#ff7b2f]"><a href="">Faire un don</a></li>
+                    </ul>
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <nav class="mt-10 mx-36 max-[640px]:mx-0">
+            <hr width="1048px" align="left">
+            <div class="flex justify-between mt-3 max-[640px]:justify-center 
+            max-[300px]:mx-5">
+                <p class="text-white ">
+                    Tout droit réserver @ 2023
+                </p>
+                <p class="text-white">
+                    - Terme et Conditions
+                </p>
+
+            </div>
+        </nav>
+
+
+    </footer>
+
+</body>
+
+</html>
